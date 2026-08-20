@@ -1,1 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="AquaSolar CEP - Projeto de automação e aquecimento sustentável para a piscina térmica do Colégio Estadual do Paraná.">
+
+    <title>AquaSolar CEP | Projeto Integrador</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header id="inicio">
+        <nav class="navbar" aria-label="Menu principal">
+
+            <a href="#inicio" class="logo">
+                <span>☀️</span> AquaSolar <strong>CEP</strong>
+            </a>
+
+            <button class="menu-btn" id="menuBtn"
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#projeto">Projeto</a></li>
+                <li><a href="#optica">Óptica</a></li>
+                <li><a href="#automacao">Automação</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#acessibilidade">Acessibilidade</a></li>
+            </ul>
+
+        </nav>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <p class="tag">🌱 PROJETO INTEGRADOR 2026</p>
+
+                <h1>
+                    O futuro da piscina térmica começa com
+                    <span>energia inteligente.</span>
+                </h1>
+
+                <p>
+                    Uma proposta sustentável para automatizar e otimizar
+                    o aquecimento da piscina térmica do Colégio Estadual
+                    do Paraná utilizando energia solar, óptica, sensores
+                    e programação.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projeto" class="btn primary">
+                        Conhecer o projeto
+                    </a>
+
+                    <a href="#simulador" class="btn secondary">
+                        Testar simulador
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="hero-visual" aria-label="Ilustração de uma piscina sendo aquecida por energia solar">
+
+                <div class="sun">☀️</div>
+
+                <div class="rays"></div>
+
+                <div class="solar-panel panel-1"></div>
+                <div class="solar-panel panel-2"></div>
+                <div class="solar-panel panel-3"></div>
+
+                <div class="pool">
+                    <div class="water"></div>
+                </div>
+
+                <div class="temperature">
+                    🌡️ <span id="heroTemp">28°C</span>
+                </div>
+
+            </div>
+
+        </section>
+    </header>
+
+
+    <!-- ESTATÍSTICAS -->
+    <section class="stats">
+
+        <div class="stat">
+            <span>☀️</span>
+            <h2>Energia Solar</h2>
+            <p>Fonte renovável e sustentável</p>
+        </div>
+
+        <div class="stat">
+            <span>🌡️</span>
+            <h2>Monitoramento</h2>
+            <p>Controle automático da temperatura</p>
+        </div>
+
+        <div class="stat">
+            <span>🤖</span>
+            <h2>Automação</h2>
+            <p>Sensores e atuadores inteligentes</p>
+        </div>
+
+        <div class="stat">
+            <span>♿</span>
+            <h2>Inclusão</h2>
+            <p>Site pensado para todos</p>
+        </div>
+
+    </section>
+
+
+    <!-- SOBRE O PROJETO -->
+    <main>
+
+        <section id="projeto" class="section">
+
+            <div class="section-title">
+                <p>01 — A PROPOSTA</p>
+                <h2>Um sistema pensado para o presente e para o futuro.</h2>
+            </div>
+
+            <div class="project-grid">
+
+                <div class="project-text">
+
+                    <h3>💧 O desafio</h3>
+
+                    <p>
+                        Manter uma piscina térmica aquecida exige uma grande
+                        quantidade de energia. Por isso, buscar alternativas
+                        mais eficientes e sustentáveis é fundamental para
+                        reduzir impactos ambientais e custos energéticos.
+                    </p>
+
+                    <h3>🌞 Nossa solução</h3>
+
+                    <p>
+                        O AquaSolar CEP propõe um sistema de aquecimento
+                        inteligente que utiliza coletores solares para captar
+                        a energia da radiação solar. A água da piscina circula
+                        pelo sistema por meio de bombas controladas
+                        automaticamente.
+                    </p>
+
+                    <p>
+                        Sensores monitoram constantemente a temperatura da
+                        água e enviam informações para um sistema de controle.
+                        Quando necessário, os atuadores entram em funcionamento
+                        para manter a piscina próxima da temperatura ideal.
+                    </p>
+
+                </div>
+
+
+                <div class="solution-card">
+
+                    <h3>🔄 Ciclo inteligente</h3>
+
+                    <div class="cycle">
+
+                        <div class="cycle-item">
+                            <span>☀️</span>
+                            <p>Radiação solar</p>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="cycle-item">
+                            <span>⬛</span>
+                            <p>Coletor absorve energia</p>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="cycle-item">
+                            <span>💧</span>
+                            <p>Água é aquecida</p>
+                        </div>
+
+                        <div class="arrow">→</div>
+
+                        <div class="cycle-item">
+                            <span>🌡️</span>
+                            <p>Sensor monitora</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ÓPTICA -->
+        <section id="optica" class="section dark-section">
+
+            <div class="section-title light-title">
+                <p>02 — TECNOCIÊNCIA E ÓPTICA</p>
+                <h2>A luz também faz parte da engenharia do projeto.</h2>
+            </div>
+
+
+            <div class="optics-grid">
+
+                <article class="optic-card">
+                    <div class="optic-icon">🌞</div>
+
+                    <h3>Absorção</h3>
+
+                    <p>
+                        Os coletores solares utilizam superfícies capazes de
+                        absorver uma grande quantidade da radiação incidente.
+                        Parte dessa energia é transformada em energia térmica,
+                        contribuindo para o aquecimento da água.
+                    </p>
+                </article>
+
+
+                <article class="optic-card">
+                    <div class="optic-icon">↗️</div>
+
+                    <h3>Reflexão</h3>
+
+                    <p>
+                        A escolha dos materiais é importante porque superfícies
+                        muito refletivas devolvem uma parte maior da radiação.
+                        Para aumentar a eficiência do coletor, busca-se reduzir
+                        perdas por reflexão.
+                    </p>
+                </article>
+
+
+                <article class="optic-card">
+                    <div class="optic-icon">🔎</div>
+
+                    <h3>Refração</h3>
+
+                    <p>
+                        A refração ocorre quando a luz passa de um meio para
+                        outro e altera sua velocidade e direção. O estudo desse
+                        fenômeno ajuda a compreender como a radiação interage
+                        com diferentes materiais e coberturas transparentes.
+                    </p>
+                </article>
+
+
+                <article class="optic-card">
+                    <div class="optic-icon">🌈</div>
+
+                    <h3>Cores e eficiência</h3>
+
+                    <p>
+                        O Disco de Newton mostra que a luz branca é formada por
+                        diferentes cores. Cada material pode absorver ou refletir
+                        diferentes comprimentos de onda, por isso a escolha da
+                        superfície dos coletores influencia o aproveitamento da
+                        energia solar.
+                    </p>
+                </article>
+
+            </div>
+
+
+            <div class="science-box">
+
+                <div>
+                    <h3>🔬 Disco de Newton e os coletores solares</h3>
+
+                    <p>
+                        Quando as cores do Disco de Newton são combinadas pela
+                        rotação, percebemos novamente a luz próxima do branco.
+                        Isso demonstra que a luz solar possui diferentes
+                        componentes. Uma superfície escura adequada para um
+                        coletor tende a absorver mais radiação em vez de
+                        refletir grande parte dela, favorecendo a conversão da
+                        energia recebida em calor.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>📷 Câmara Escura e a direção da luz</h3>
+
+                    <p>
+                        A Câmara Escura evidencia a propagação da luz em linha
+                        reta. No AquaSolar CEP, esse conhecimento é aplicado
+                        no planejamento da posição e inclinação dos coletores,
+                        buscando uma incidência solar mais eficiente ao longo
+                        do período de funcionamento.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AUTOMAÇÃO -->
+        <section id="automacao" class="section">
+
+            <div class="section-title">
+                <p>03 — ROBÓTICA E PROGRAMAÇÃO</p>
+                <h2>O sistema toma decisões a partir de informações reais.</h2>
+            </div>
+
+
+            <div class="automation">
+
+                <div class="flow">
+
+                    <div class="flow-box sensor">
+                        <span>🌡️</span>
+                        <h3>Sensores</h3>
+                        <p>Medem temperatura e condições do sistema.</p>
+                    </div>
+
+                    <div class="flow-arrow">→</div>
+
+                    <div class="flow-box control">
+                        <span>🧠</span>
+                        <h3>Controlador</h3>
+                        <p>Analisa os dados e decide o que fazer.</p>
+                    </div>
+
+                    <div class="flow-arrow">→</div>
+
+                    <div class="flow-box actuator">
+                        <span>⚙️</span>
+                        <h3>Atuadores</h3>
+                        <p>Acionam bombas e outros equipamentos.</p>
+                    </div>
+
+                    <div class="flow-arrow">→</div>
+
+                    <div class="flow-box result">
+                        <span>💧</span>
+                        <h3>Piscina</h3>
+                        <p>Recebe água na temperatura controlada.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="logic-box">
+
+                    <h3>💻 Lógica de funcionamento</h3>
+
+                    <div class="code">
+
+                        <p>SE temperatura da piscina &lt; temperatura ideal:</p>
+                        <p class="indent">verificar energia solar disponível</p>
+                        <p class="indent">SE disponível:</p>
+                        <p class="indent2">ligar bomba de circulação</p>
+                        <p class="indent2">direcionar água aos coletores</p>
+
+                        <p>SE temperatura atingir o valor ideal:</p>
+                        <p class="indent">reduzir ou desligar aquecimento</p>
+
+                        <p>repetir monitoramento continuamente</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIMULADOR -->
+        <section id="simulador" class="section simulator-section">
+
+            <div class="section-title">
+                <p>04 — INTERATIVIDADE</p>
+                <h2>Simulador AquaSolar</h2>
+
+                <span>
+                    Altere as condições abaixo e observe como o sistema
+                    reagiria.
+                </span>
+            </div>
+
+
+            <div class="simulator">
+
+                <div class="controls">
+
+                    <div class="control-group">
+
+                        <label for="poolTemperature">
+                            Temperatura atual da água
+                            <strong id="tempValue">24°C</strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="poolTemperature"
+                            min="15"
+                            max="40"
+                            value="24"
+                        >
+
+                    </div>
+
+
+                    <div class="control-group">
+
+                        <label for="solarIntensity">
+                            Intensidade solar
+                            <strong id="solarValue">70%</strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="solarIntensity"
+                            min="0"
+                            max="100"
+                            value="70"
+                        >
+
+                    </div>
+
+
+                    <div class="control-group">
+
+                        <label for="idealTemperature">
+                            Temperatura ideal
+                            <strong id="idealValue">30°C</strong>
+                        </label>
+
+                        <input
+                            type="range"
+                            id="idealTemperature"
+                            min="20"
+                            max="35"
+                            value="30"
+                        >
+
+                    </div>
+
+
+                    <button id="simulateBtn" class="btn primary">
+                        ⚡ Analisar sistema
+                    </button>
+
+                </div>
+
+
+                <div class="simulation-result">
+
+                    <div class="digital-display">
+
+                        <p>STATUS DO SISTEMA</p>
+
+                        <h3 id="systemStatus">
+                            Aguardando análise
+                        </h3>
+
+                        <div class="display-line">
+                            <span>Temperatura atual</span>
+                            <strong id="displayTemp">24°C</strong>
+                        </div>
+
+                        <div class="display-line">
+                            <span>Energia solar</span>
+                            <strong id="displaySolar">70%</strong>
+                        </div>
+
+                        <div class="display-line">
+                            <span>Bomba</span>
+                            <strong id="pumpStatus">--</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div id="resultMessage" class="result-message">
+                        Ajuste os valores e clique em analisar.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACESSIBILIDADE -->
+        <section id="acessibilidade" class="section">
+
+            <div class="section-title">
+                <p>05 — ACESSIBILIDADE DIGITAL</p>
+                <h2>Tecnologia também significa inclusão.</h2>
+            </div>
+
+
+            <div class="accessibility-grid">
+
+                <div class="access-card">
+                    <span>👁️</span>
+                    <h3>Bom contraste</h3>
+                    <p>
+                        As cores foram escolhidas para facilitar a leitura e
+                        criar uma boa diferenciação entre textos e fundos.
+                    </p>
+                </div>
+
+                <div class="access-card">
+                    <span>🔤</span>
+                    <h3>Textos legíveis</h3>
+                    <p>
+                        O site utiliza fontes de tamanho confortável, boa
+                        organização visual e espaçamento adequado.
+                    </p>
+                </div>
+
+                <div class="access-card">
+                    <span>📱</span>
+                    <h3>Responsividade</h3>
+                    <p>
+                        A estrutura se adapta para computadores, tablets e
+                        celulares, permitindo o acesso em diferentes telas.
+                    </p>
+                </div>
+
+                <div class="access-card">
+                    <span>⌨️</span>
+                    <h3>Navegação clara</h3>
+                    <p>
+                        Menus intuitivos, botões identificados e uma estrutura
+                        organizada facilitam a experiência dos usuários.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="accessibility-actions">
+
+                <h3>Personalize sua visualização</h3>
+
+                <button id="fontIncrease" class="access-btn">
+                    A+ Aumentar texto
+                </button>
+
+                <button id="fontDecrease" class="access-btn">
+                    A− Diminuir texto
+                </button>
+
+                <button id="contrastBtn" class="access-btn">
+                    ◐ Alto contraste
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPACTO -->
+        <section class="impact-section">
+
+            <div class="impact-content">
+
+                <p>🌱 SUSTENTABILIDADE + TECNOLOGIA + INCLUSÃO</p>
+
+                <h2>
+                    Uma piscina mais eficiente pode inspirar uma escola
+                    mais sustentável.
+                </h2>
+
+                <span>
+                    O AquaSolar CEP demonstra como conhecimentos de Física,
+                    Óptica, Robótica e Programação podem ser integrados para
+                    criar soluções tecnológicas voltadas para necessidades
+                    reais da comunidade escolar.
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <div class="footer-logo">
+            ☀️ AquaSolar <strong>CEP</strong>
+        </div>
+
+        <p>
+            Projeto Integrador — Tecnologia, sustentabilidade e inovação.
+        </p>
+
+        <p class="copyright">
+            Desenvolvido para a comunidade escolar do Colégio Estadual do Paraná.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
